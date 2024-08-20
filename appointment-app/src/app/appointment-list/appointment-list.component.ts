@@ -23,4 +23,8 @@ export class AppointmentListComponent {
       this.newAppointmentTitle = ""
     }
   }
+
+  deleteAppointment(appointmentId: number) {
+    this.appointments.splice(appointmentId, 1)
+  }
 }
