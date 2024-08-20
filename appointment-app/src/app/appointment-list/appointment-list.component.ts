@@ -21,8 +21,6 @@ export class AppointmentListComponent {
       this.appointments.push(newAppointment)
       this.newAppointmentDate = new Date()
       this.newAppointmentTitle = ""
-
-      console.log(this.appointments.length)
     }
   }
 }
