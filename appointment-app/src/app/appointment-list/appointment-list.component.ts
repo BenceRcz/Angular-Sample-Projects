@@ -22,9 +22,11 @@ export class AppointmentListComponent {
       this.newAppointmentDate = new Date()
       this.newAppointmentTitle = ""
     }
+    localStorage.setItem("appointments", JSON.stringify(this.appointments))
   }
 
   deleteAppointment(appointmentId: number) {
     this.appointments.splice(appointmentId, 1)
+    localStorage.setItem("appointments", JSON.stringify(this.appointments))
   }
 }
