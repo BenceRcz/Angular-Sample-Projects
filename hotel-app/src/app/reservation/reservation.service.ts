@@ -29,6 +29,6 @@ export class ReservationService {
   }
 
   updateReservation(id: string, updateReservation: Reservation): Observable<void> {
-    return this.http.put<void>(this.apiUrl + "/reservation", updateReservation);
+    return this.http.put<void>(this.apiUrl + "/reservation/" + id, updateReservation);
   }
 }
